@@ -125,7 +125,7 @@ export function Hero() {
             </span>
           </div>
 
-          {/* Portrait image — full photo, touching bottom line */}
+          {/* Portrait image — enlarged / zoomed, anchored to bottom line */}
           <div
             className="portrait-wrapper relative w-full flex justify-center items-end"
             style={{ height: '100%', paddingBottom: '0px' }}
@@ -136,12 +136,14 @@ export function Hero() {
               className="hero-portrait grayscale-portrait"
               style={{
                 display: 'block',
-                maxHeight: '85vh',
+                maxHeight: '92vh',
                 width: 'auto',
                 maxWidth: '100%',
                 objectFit: 'contain',
                 objectPosition: 'bottom center',
                 marginBottom: '0px',
+                transform: 'scale(1.12)',
+                transformOrigin: 'bottom center',
                 mixBlendMode: 'multiply',
               }}
             />
