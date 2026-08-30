@@ -29,13 +29,13 @@ export function Hero() {
           minHeight: '95vh',
           gridTemplateColumns: '45% 55%',
           paddingTop: '88px',   /* clear the fixed navbar */
-          paddingBottom: '40px',
+          paddingBottom: '0px',
         }}
       >
         {/* ════════════════════════════════════════
             LEFT COLUMN — Introduction + CTA
         ════════════════════════════════════════ */}
-        <div className="flex flex-col justify-center pr-8 lg:pr-16 hero-left-col">
+        <div className="flex flex-col justify-center pr-8 lg:pr-16 hero-left-col py-10">
 
           {/* Handwritten greeting */}
           <p
@@ -125,7 +125,7 @@ export function Hero() {
             </span>
           </div>
 
-          {/* Portrait image — full photo, positioned slightly up to align with grid line */}
+          {/* Portrait image — full photo, touching bottom line */}
           <div
             className="portrait-wrapper relative w-full flex justify-center items-end"
             style={{ height: '100%', paddingBottom: '0px' }}
@@ -136,12 +136,12 @@ export function Hero() {
               className="hero-portrait grayscale-portrait"
               style={{
                 display: 'block',
-                maxHeight: '88vh',
+                maxHeight: '85vh',
                 width: 'auto',
                 maxWidth: '100%',
                 objectFit: 'contain',
                 objectPosition: 'bottom center',
-                marginBottom: '20px',
+                marginBottom: '0px',
                 mixBlendMode: 'multiply',
               }}
             />
