@@ -144,10 +144,11 @@ export function Hero() {
                 aspectRatio: '3 / 4',
                 overflow: 'hidden',
                 alignSelf: 'flex-end',
+                mixBlendMode: 'multiply',
               }}
             >
               <img
-                src="/assets/bidita-portrait.jpg"
+                src="/assets/bidita-portrait.png"
                 alt="Bidita Gogoi — Computer Science Engineering Student"
                 className="hero-portrait"
                 style={{
