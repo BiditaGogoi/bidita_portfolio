@@ -125,43 +125,26 @@ export function Hero() {
             </span>
           </div>
 
-          {/* Portrait image — cropped to waist-up, hands hidden */}
+          {/* Portrait image — full photo, no crop */}
           <div
             className="portrait-wrapper relative w-full flex justify-center items-end"
             style={{ height: '100%' }}
           >
-            {/* Crop container: overflow hidden cuts the bottom (hands/lap) */}
-            <div
-              className="portrait-crop-container grayscale-portrait"
+            <img
+              src="/assets/bidita-portrait.png"
+              alt="Bidita Gogoi — Computer Science Engineering Student"
+              className="hero-portrait grayscale-portrait"
               style={{
-                position: 'relative',
-                width: '100%',
-                maxWidth: '520px',
-                /* 
-                  aspect-ratio ~3:4 shows head-to-waist.
-                  Increase the second number to reveal more, decrease to crop tighter.
-                */
-                aspectRatio: '3 / 4',
-                overflow: 'hidden',
-                alignSelf: 'flex-end',
+                display: 'block',
+                maxHeight: '90vh',
+                width: 'auto',
+                maxWidth: '100%',
+                objectFit: 'contain',
+                objectPosition: 'bottom center',
+                marginTop: 'auto',
                 mixBlendMode: 'multiply',
               }}
-            >
-              <img
-                src="/assets/bidita-portrait.png"
-                alt="Bidita Gogoi — Computer Science Engineering Student"
-                className="hero-portrait"
-                style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  width: '100%',
-                  height: '145%',   /* taller than container → bottom gets clipped */
-                  objectFit: 'cover',
-                  objectPosition: 'top center',
-                }}
-              />
-            </div>
+            />
           </div>
         </div>
       </div>
