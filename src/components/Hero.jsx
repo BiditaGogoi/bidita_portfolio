@@ -125,10 +125,10 @@ export function Hero() {
             </span>
           </div>
 
-          {/* Portrait image — full photo, no crop */}
+          {/* Portrait image — full photo, positioned slightly up to align with grid line */}
           <div
             className="portrait-wrapper relative w-full flex justify-center items-end"
-            style={{ height: '100%' }}
+            style={{ height: '100%', paddingBottom: '0px' }}
           >
             <img
               src="/assets/bidita-portrait.png"
@@ -136,12 +136,12 @@ export function Hero() {
               className="hero-portrait grayscale-portrait"
               style={{
                 display: 'block',
-                maxHeight: '90vh',
+                maxHeight: '88vh',
                 width: 'auto',
                 maxWidth: '100%',
                 objectFit: 'contain',
                 objectPosition: 'bottom center',
-                marginTop: 'auto',
+                marginBottom: '20px',
                 mixBlendMode: 'multiply',
               }}
             />
