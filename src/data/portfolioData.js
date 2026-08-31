@@ -89,7 +89,7 @@ export const portfolioData = {
       field: "Computer Science and Engineering",
       institution: "Lovely Professional University",
       board: "",
-      period: "August 2026 – Present",
+      period: "2025 – 2029",
       grade: "CGPA: 8.46",
       badgeLabel: "Pursuing",
       details: "Building a strong foundation in Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, and Software Engineering."
@@ -118,24 +118,39 @@ export const portfolioData = {
     }
   ],
 
-  certifications: [
+  certificates: [
     {
       id: "cert-01",
       title: "Machine Learning with Python",
-      issuer: "Coursera",
-      date: "February 2026",
-      credentialUrl: "#",
-      type: "Machine Learning",
-      description: "Supervised and unsupervised learning, regression algorithms, classification models, and data manipulation using Python scientific libraries."
+      issuer: "IBM — Coursera",
+      date: "February 1, 2026",
+      credentialUrl: "https://coursera.org/verify/BXB7HJNYKMLG",
+      verifyId: "BXB7HJNYKMLG",
+      type: "Course Certificate",
+      image: "/assets/certificate_ml_python.jpg",
+      description: "Online course authorized by IBM and offered through Coursera covering supervised and unsupervised machine learning algorithms, classification models, regression, and scientific data manipulation with Python."
     },
     {
       id: "cert-02",
-      title: "Certificate in Time Management",
-      issuer: "Professional Skills Academy",
-      date: "October 2025",
+      title: "Effective Time Management",
+      issuer: "Tech Veda",
+      date: "October 29, 2025",
+      credentialUrl: "https://www.techveda.in/",
+      verifyId: "TV/OCT25/ETM/A589",
+      type: "Certificate of Appreciation",
+      image: "/assets/certificate_time_management.jpg",
+      description: "Awarded for demonstrating excellence in completing the 5 hours MOOC on Effective Time Management, which included passing a comprehensive proctored examination."
+    },
+    {
+      id: "cert-03",
+      title: "AWS Student Community Day Workshop",
+      issuer: "AWS Cloud Clubs",
+      date: "November 14, 2025",
       credentialUrl: "#",
-      type: "Professional Productivity",
-      description: "Prioritization techniques, project planning frameworks, task execution strategies, and academic workflow optimization."
+      verifyId: "Jalandhar, Punjab",
+      type: "Certificate of Participation",
+      image: "/assets/certificate_aws_workshop.jpg",
+      description: "Awarded for attending and actively participating in the cloud computing workshop at AWS Student Community Day Jalandhar, Punjab."
     }
   ],
 
@@ -156,7 +171,9 @@ export const portfolioData = {
       category: "Cloud & Workshop",
       organization: "AWS Student Community",
       date: "Attended",
-      hasCertificate: false,
+      hasCertificate: true,
+      certTitle: "Certificate of Participation — AWS Student Community Day",
+      image: "/assets/certificate_aws_workshop.jpg",
       description: "Participated in an interactive technical workshop organized by the AWS Student Community covering fundamental cloud deployment, EC2, and serverless concepts."
     },
     {
@@ -170,12 +187,12 @@ export const portfolioData = {
     },
     {
       id: "act-04",
-      title: "Get Connected Activity",
-      category: "Networking & Peer Collaboration",
-      organization: "Student Technical Network",
-      date: "Participated",
+      title: "Social Media Manager — Nexus Spring of Code",
+      category: "Community & Leadership",
+      organization: "Nexus Spring of Code",
+      date: "Social Media Manager",
       hasCertificate: false,
-      description: "Participated in collaborative peer networking events focused on technical knowledge sharing, mentorship, and project brainstorming."
+      description: "Managed social media content and helped promote events, activities, and initiatives through engaging digital communication and creative content."
     }
   ],
 
