@@ -9,10 +9,10 @@ export const portfolioData = {
     tags: ["Computer Science", "Development", "Problem Solving", "Learning"],
     profileImage: "/assets/profile.jpg",
     bio: [
-      "I’m a Computer Science and Engineering student at Lovely Professional University, passionate about using technology to solve real-world problems.",
+      "I’m a Computer Science and Engineering student at Lovely Professional University, curious about how technology can solve real-world problems.",
       "I enjoy programming, problem solving, databases, IoT, and web development, with a focus on building practical solutions.",
       "I’ve worked with C, C++, Python, and DBMS through academic projects and hands-on experiences.",
-      "I’m always learning, experimenting, and improving my skills."
+      "I’m continuously learning, experimenting, and building new things to strengthen my skills."
     ]
   },
 
