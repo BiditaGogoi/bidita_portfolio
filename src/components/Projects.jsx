@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { portfolioData } from '../data/portfolioData';
 import { ProjectModal } from './ProjectModal';
@@ -29,6 +29,7 @@ function HeadlineWithAccent({ lines, highlightWord }) {
 /* ─── Per-project scroll-zoom card ──────────────────────────────────────── */
 function ProjectCard({ project, onOpen }) {
   const [hovered, setHovered] = useState(false);
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -48,15 +49,19 @@ function ProjectCard({ project, onOpen }) {
   return (
     <div ref={ref} className="relative">
       <motion.div
-        style={{ scale, opacity, transformOrigin: 'center center' }}
+        onClick={() => onOpen(project)}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
+        onMouseMove={(e) => {
+          const rect = e.currentTarget.getBoundingClientRect();
+          setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+        }}
         className="relative rounded-2xl overflow-hidden border border-[#141414]/10"
-        /* grid dot background on the whole card */
         style={{
           scale,
           opacity,
           transformOrigin: 'center center',
+          cursor: 'none',
           backgroundImage: `
             linear-gradient(rgba(20,20,20,0.055) 1px, transparent 1px),
             linear-gradient(90deg, rgba(20,20,20,0.055) 1px, transparent 1px)
@@ -65,6 +70,21 @@ function ProjectCard({ project, onOpen }) {
           backgroundColor: '#FAFAF8',
         }}
       >
+        {/* Custom "View" cursor */}
+        <motion.div
+          className="pointer-events-none absolute z-50 flex items-center justify-center
+                     w-16 h-16 rounded-full bg-[#141414] text-white text-[11px]
+                     font-mono font-bold uppercase tracking-widest shadow-lg"
+          animate={{
+            x: mousePos.x - 32,
+            y: mousePos.y - 32,
+            scale: hovered ? 1 : 0,
+            opacity: hovered ? 1 : 0,
+          }}
+          transition={{ type: 'spring', stiffness: 300, damping: 25, mass: 0.5 }}
+        >
+          View
+        </motion.div>
         {/* ── Two-column grid ──────────────────────────────────────────── */}
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr]">
 
@@ -91,19 +111,7 @@ function ProjectCard({ project, onOpen }) {
               </p>
             </div>
 
-            {/* Middle: standalone View button */}
-            <div className="my-8">
-              <button
-                onClick={() => onOpen(project)}
-                className="w-14 h-14 rounded-full bg-[#141414] text-white text-xs
-                           font-mono font-bold uppercase tracking-widest
-                           flex items-center justify-center
-                           shadow-md hover:bg-[#1D4ED8] transition-colors duration-250
-                           select-none"
-              >
-                View
-              </button>
-            </div>
+
 
             {/* Bottom cluster */}
             <div className="space-y-1.5 mt-auto">

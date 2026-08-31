@@ -85,30 +85,36 @@ export const portfolioData = {
   education: [
     {
       id: "edu-01",
-      degree: "Bachelor of Technology (B.Tech)",
+      degree: "B.Tech — Computer Science & Engineering (AI & ML)",
       field: "Computer Science and Engineering",
       institution: "Lovely Professional University",
+      board: "",
       period: "August 2026 – Present",
       grade: "CGPA: 8.46",
-      details: "Focusing on Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, and Software Engineering."
+      badgeLabel: "Pursuing",
+      details: "Building a strong foundation in Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, and Software Engineering."
     },
     {
       id: "edu-02",
-      degree: "Intermediate / Class 12",
-      field: "Science Stream (Physics, Chemistry, Mathematics, CS)",
+      degree: "Class XII — Senior Secondary",
+      field: "Science Stream (PCM, CS)",
       institution: "Delhi Public School, Jorhat",
-      period: "Completed",
-      grade: "Percentage: 80.6%",
-      details: "Strong foundation in Mathematics and Computer Fundamentals."
+      board: "CBSE Board",
+      period: "Completed: 2025",
+      grade: "80.6%",
+      badgeLabel: "80.6%",
+      details: "Completed Senior Secondary education with a focus on science and mathematics, strengthening analytical skills and disciplined problem-solving."
     },
     {
       id: "edu-03",
-      degree: "Matriculation / Class 10",
+      degree: "Class X — Secondary School",
       field: "General Secondary Education",
-      institution: "Delhi Public School, Jorhat",
-      period: "Completed",
-      grade: "Percentage: 81.2%",
-      details: "Academic excellence in Mathematics and General Sciences."
+      institution: "Holy Flower Senior Secondary School",
+      board: "CBSE Board",
+      period: "Completed: 2023",
+      grade: "81.2%",
+      badgeLabel: "81.2%",
+      details: "Completed Secondary School Examination with distinction under CBSE, building a solid academic and mathematical foundation."
     }
   ],
 
