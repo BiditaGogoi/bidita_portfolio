@@ -9,9 +9,10 @@ export const portfolioData = {
     tags: ["Computer Science", "Development", "Problem Solving", "Learning"],
     profileImage: "/assets/profile.jpg",
     bio: [
-      "I am a Computer Science and Engineering student at Lovely Professional University with a deep curiosity for how software and hardware intersect to solve real-world problems.",
-      "My focus spans across core computer science principles—from programming in C++, C, and Python to understanding database management systems and systems design.",
-      "Whether developing IoT electrical safety systems or building full-stack service platforms, I approach every project with detail-oriented focus, adaptability, and a commitment to continuous learning and teamwork."
+      "I’m a Computer Science and Engineering student at Lovely Professional University, passionate about using technology to solve real-world problems.",
+      "I enjoy programming, problem solving, databases, IoT, and web development, with a focus on building practical solutions.",
+      "I’ve worked with C, C++, Python, and DBMS through academic projects and hands-on experiences.",
+      "I’m always learning, experimenting, and improving my skills."
     ]
   },
 

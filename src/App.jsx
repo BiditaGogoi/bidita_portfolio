@@ -15,14 +15,16 @@ export default function App() {
     <div className="min-h-screen bg-[#FAF8F5] text-[#141414] font-sans relative selection:bg-[#1D4ED8] selection:text-white">
       <CustomCursor />
       <Header />
-      <main>
+      <main className="relative">
         <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Education />
-        <Experience />
-        <Contact />
+        <div className="relative z-20 bg-[#FAF8F5]">
+          <About />
+          <Skills />
+          <Projects />
+          <Education />
+          <Experience />
+          <Contact />
+        </div>
       </main>
       <Footer />
     </div>

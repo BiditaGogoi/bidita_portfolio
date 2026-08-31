@@ -19,16 +19,15 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative bg-grid-pattern overflow-hidden"
-      style={{ minHeight: '95vh' }}
+      className="sticky top-0 z-0 bg-grid-pattern overflow-hidden min-h-screen flex items-center"
     >
       {/* ── Main two-column grid ── */}
       <div
-        className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 grid items-center"
+        className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 grid items-center w-full"
         style={{
-          minHeight: '95vh',
+          minHeight: '100vh',
           gridTemplateColumns: '45% 55%',
-          paddingTop: '88px',   /* clear the fixed navbar */
+          paddingTop: '80px',   /* clear the fixed navbar */
           paddingBottom: '0px',
         }}
       >
