@@ -61,7 +61,7 @@ export function About() {
     <section
       id="about"
       ref={sectionRef}
-      className="relative z-20 bg-[#0B1E48] text-white border-t border-blue-950/60 shadow-[0_-25px_60px_rgba(5,15,35,0.4)] min-h-screen flex flex-col justify-start pt-20 pb-12 md:pt-24 md:pb-14 overflow-hidden"
+      className="relative bg-[#0B1E48] text-white border-t border-blue-950/60 min-h-screen flex flex-col justify-start pt-20 pb-12 md:pt-24 md:pb-14 overflow-hidden"
       style={{
         backgroundImage: `
           linear-gradient(to right, rgba(255, 255, 255, 0.065) 1px, transparent 1px),

@@ -157,13 +157,12 @@ export const portfolioData = {
   activities: [
     {
       id: "act-01",
-      title: "Hackathon Participation & Engineering Challenge",
+      title: "WEB-A-THON — Intra-University Hackathon",
       category: "Hackathon",
-      organization: "National Student Hackathon Series",
+      organization: "WEB-A-THON (University Level)",
       date: "Participated",
-      hasCertificate: true,
-      certTitle: "Certificate of Hackathon Participation",
-      description: "Collaborated in an intensive multi-hour coding hackathon to design and prototype rapid software solutions for real-world challenge statements."
+      hasCertificate: false,
+      description: "Participated in WEB-A-THON, an intra-university coding hackathon organized within the university campus, collaborating to design and prototype rapid software solutions for challenge statements."
     },
     {
       id: "act-02",
@@ -178,12 +177,12 @@ export const portfolioData = {
     },
     {
       id: "act-03",
-      title: "CDP (Community Development Program)",
-      category: "Community & Leadership",
-      organization: "Lovely Professional University",
-      date: "Active Member",
+      title: "Community Development Project (NGO)",
+      category: "Social Service",
+      organization: "Northeast Ujjiwan Foundation (NGO)",
+      date: "Jun' 26 – Jul' 26",
       hasCertificate: false,
-      description: "Engaged in community initiative programs, leadership building, and group organizing activities to drive positive impact."
+      description: "Participated in community outreach activities and learned about local social needs. Assisted in flood-relief operations including ration packing and distribution to affected families, supporting field activities with teamwork and social responsibility."
     },
     {
       id: "act-04",
@@ -197,9 +196,10 @@ export const portfolioData = {
   ],
 
   contact: {
-    email: "bidita.gogoi.dev@gmail.com",
-    linkedin: "https://linkedin.com/in/bidita-gogoi",
-    github: "https://github.com/biditagogoi",
+    email: "biditagogoi169@gmail.com",
+    phone: "+91 8822053575",
+    linkedin: "https://www.linkedin.com/in/bidita-gogoi-35814a37b",
+    github: "https://github.com/BiditaGogoi",
     location: "Punjab / Assam, India"
   }
 };

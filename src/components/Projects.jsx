@@ -186,9 +186,6 @@ export function Projects() {
               Selected Works
             </h2>
           </div>
-          <p className="font-handwriting text-2xl text-[#6B7280] mt-4 md:mt-0">
-            editorial project showcases ✦
-          </p>
         </div>
 
         {/* Cards */}

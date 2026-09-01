@@ -19,7 +19,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="sticky top-0 z-0 bg-grid-pattern overflow-hidden min-h-screen flex items-center"
+      className="relative bg-grid-pattern overflow-hidden min-h-screen flex items-center"
     >
       {/* ── Main two-column grid ── */}
       <div

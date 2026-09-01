@@ -17,14 +17,12 @@ export default function App() {
       <Header />
       <main className="relative">
         <Hero />
-        <div className="relative z-20 bg-[#FAF8F5]">
-          <About />
-          <Skills />
-          <Projects />
-          <Education />
-          <Experience />
-          <Contact />
-        </div>
+        <About />
+        <Skills />
+        <Projects />
+        <Education />
+        <Experience />
+        <Contact />
       </main>
       <Footer />
     </div>

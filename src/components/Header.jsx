@@ -52,7 +52,7 @@ export function Header() {
     }
     const element = document.querySelector(href);
     if (element) {
-      const offset = href === '#about' ? 0 : 80;
+      const offset = 80;
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;

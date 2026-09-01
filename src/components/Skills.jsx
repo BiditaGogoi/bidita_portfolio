@@ -182,12 +182,6 @@ export function Skills() {
 
         </div>
 
-        {/* Bottom Editorial Callout */}
-        <div className="mt-16 pt-8 border-t border-[#141414]/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-[#6B7280] font-mono text-xs">
-          <span>Continuous refinement across hardware logic, backend systems & web standards.</span>
-          <span className="text-[#141414]/80 font-medium">B.Tech CSE • Lovely Professional University</span>
-        </div>
-
       </div>
     </section>
   );
